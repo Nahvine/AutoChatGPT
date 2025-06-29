@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Auto ChatGPT</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      padding: 15px;
+      width: 280px;
+    }
+    h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      text-align: center;
+      color: #222;
+    }
+    textarea, input {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      resize: vertical;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+    <img src="images/icon48.png" alt="App Icon" style="display: block; margin: 0 auto 10px; width: 48px; height: 48px;">
+  <h3>Auto ChatGPT</h3>
+  <textarea id="prompt" placeholder="Enter your prompt..." rows="4"></textarea>
+  <input type="number" id="count" min="1" placeholder="Number of times to send">
+  <button id="sendBtn">Send</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
